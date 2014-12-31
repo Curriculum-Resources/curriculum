@@ -24,3 +24,34 @@
 
 # Motorcycle.new.brake()
 # => 'Getting slower'
+
+module Driveable
+	module ClassMethods
+		def make_sound
+			puts 'Brumm brumm!'
+		end
+	end
+	
+	module InstanceMethods
+		def throttle
+			puts 'Getting faster'			
+		end
+
+		def brake
+			puts 'Getting slower'
+		end
+	end
+	
+	def self.included(receiver)
+		receiver.extend         ClassMethods
+		receiver.send :include, InstanceMethods
+	end
+end
+
+class Car
+	include Driveable
+end
+
+class Motorcycle
+	include Driveable
+end
