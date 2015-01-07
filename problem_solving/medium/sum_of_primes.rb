@@ -2,6 +2,6 @@
 
 require 'prime'
 
-def sumOfPrimes(n)
+def sum_of_primes(n)
 	Prime.each(n - 1).inject(:+)
 end

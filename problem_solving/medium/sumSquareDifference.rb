@@ -7,9 +7,9 @@
 # Find the difference between the sum of the squares of the first one
 # hundred natural numbers and the square of the sum.
 
-def sumSquareDifference(n = 100)
-	sumOfSquares = (1..n).map{ |i| i ** 2 }.inject(:+)
-	squareOfSums = (1..n).inject(:+) ** 2
+def sum_square_difference(n = 100)
+	sum_of_squares = (1..n).map{ |i| i ** 2 }.inject(:+)
+	square_of_sums = (1..n).inject(:+) ** 2
 
-	squareOfSums - sumOfSquares
+	square_of_sums - sum_of_squares
 end

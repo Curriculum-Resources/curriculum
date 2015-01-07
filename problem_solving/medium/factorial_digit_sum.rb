@@ -7,6 +7,6 @@ def factorial(n)
 	(2..n).inject(:*)
 end
 
-def factorialDigitSum(n)
+def factorial_digit_sum(n)
 	factorial(n).to_s.split('').map(&:to_i).inject(:+)
 end

@@ -1,6 +1,6 @@
-# Write a method called evenFibonacci that returns an array of all even
+# Write a method called even_fibonacci that returns an array of all even
 # elements of the Fibonacci sequence up to the nth number. For example,
-# evenFibonacci(5) should return [0, 2].
+# even_fibonacci(5) should return [0, 2].
 
 def fibonacci(n)
 	sequence = [0, 1]
@@ -13,6 +13,6 @@ def fibonacci(n)
 	sequence
 end
 
-def evenFibonacci(n)
+def even_fibonacci(n)
 	fibonacci(n).select(&:even?)
 end

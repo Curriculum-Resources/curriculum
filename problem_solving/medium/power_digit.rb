@@ -2,11 +2,11 @@
 # First, what is the sum of the digits of the number 2^1000?
 # Second, what is the sum of the digits of n^m?
 
-def sumOfPow(base, pow)
+def sum_of_pow(base, pow)
 	result = base ** pow
 	sumOfDigits(result)
 end
 
-def sumOfDigits(n)
+def sum_of_digits(n)
 	n.to_s.split('').map(&:to_i).inject(:+)
 end

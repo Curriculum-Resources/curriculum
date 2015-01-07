@@ -2,7 +2,7 @@
 
 require 'prime'
 
-def nthPrime(n)
+def nth_prime(n)
 	# lazy iterator from 1 through infinity filling up array, stopping when array length is n
 	# ?
 	primes = []
